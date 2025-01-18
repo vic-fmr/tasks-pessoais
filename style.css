@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "Spotify Font";
+    src: url("./assets/fonts/GothamBold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Spotify Font", sans-serif;
+}
+body {
+    background-color: rgb(14, 14, 14);
+    width: 100%;
+}
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+header img {
+    width: 35px;
+    height: 35px;
+}
+.search-and-home-container {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    gap: 20px;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid transparent;
+    cursor: text;
+}
+.search-icon-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+}
+.search-icon-div,
+.search-container {
+    background-color: rgb(38, 38, 38);
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 24px;
+    height: 100%;
+}
+.search-container input {
+    border: none;
+    width: 400px;
+    height: 25px;
+    background-color: rgb(38, 38, 38);
+    border-right: 1px solid rgba(255, 255, 255, 0.461);
+}
+.search-container input:focus {
+    outline: none;
+}
+.register-and-login-buttons {
+    display: flex;
+    gap: 20px;
+}
+.register-and-login-buttons button {
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+#register-button {
+    background-color: rgb(14, 14, 14);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+#login-button {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
