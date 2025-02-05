@@ -1,19 +1,18 @@
-@font-face {
-    font-family: "Spotify Font";
-    src: url("./assets/fonts/GothamBold.ttf") format("truetype");
-    font-weight: bold;
-    font-style: normal;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Spotify Font", sans-serif;
+    font-family: Montserrat;
 }
 body {
-    background-color: rgb(14, 14, 14);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(8, 8, 8);
     width: 100%;
+    height: 100vh;
 }
 header {
     display: flex;
@@ -55,6 +54,8 @@ header img {
 }
 .search-container input {
     border: none;
+    color: white;
+    font-size: 16px;
     width: 400px;
     height: 25px;
     background-color: rgb(38, 38, 38);
@@ -84,4 +85,180 @@ header img {
     border: none;
     color: rgb(0, 0, 0);
     cursor: pointer;
+}
+main {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding: 0 10px;
+    height: 80vh;
+}
+.your-lib-section {
+    display: flex;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.45);
+    padding: 20px 10px;
+    background-color: rgb(20, 20, 20);
+    width: 550px;
+    position: relative;
+    height: 100%;
+    border-radius: 10px;
+}
+#your-lib-title {
+    font-weight: bold;
+    width: max-content;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+#your-lib-title:hover {
+    color: white;
+}
+.music-section {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(26, 26, 26);
+    border-radius: 10px;
+}
+#plus-icon {
+    padding: 8px;
+    border-radius: 50px;
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+#plus-icon:hover {
+    color: white;
+    background-color: rgb(42, 42, 42);
+}
+.create-playlist {
+    user-select: none;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 30px;
+    width: 100%;
+    background-color: rgb(47, 47, 47);
+}
+.create-playlist button {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 50px;
+    margin-top: 5px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.explore-podcasts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 30px;
+    width: 100%;
+    background-color: rgb(47, 47, 47);
+}
+.explore-podcasts button {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: max-content;
+    padding: 0 10px;
+    height: 30px;
+    border-radius: 50px;
+    margin-top: 5px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.create-playlist button:hover,
+.explore-podcasts button:hover {
+    transform: scale(1.05);
+}
+.links {
+    margin-top: 60px;
+    padding: 15px 0 15px 15px;
+}
+.links ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+.links ul li {
+    display: flex;
+    align-items: center;
+    height: 25px;
+    list-style: none;
+}
+.links a {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.571);
+    text-decoration: none;
+}
+#language-button {
+    border: 1px solid white;
+    padding: 8px;
+    position: absolute;
+    bottom: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 50px;
+    width: max-content;
+    background-color: rgb(30, 30, 30);
+    cursor: pointer;
+}
+#language-button:hover {
+    border: 2px solid white;
+    transform: scale(1.05);
+}
+footer {
+    padding: 0px 10px;
+    height: max-content;
+    width: 100%;
+    color: white;
+}
+.test-premium-card {
+    line-height: 20px;
+    font-size: 14px;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #8a2be2, #6a5acd, #4682b4);
+}
+.test-premium-card button {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: max-content;
+    padding: 15px;
+    border-radius: 50px;
+    margin-top: 5px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.music-section {
+    padding: 20px;
+}
+.music-section p {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.music-section p:hover {
+    text-decoration: underline;
 }
